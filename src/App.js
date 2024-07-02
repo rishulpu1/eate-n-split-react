@@ -1,4 +1,7 @@
 import FreindsList from "./components/FriendsList";
+import FormAddFriend from "./components/FormAddFriend";
+import Button from "./components/Button";
+import FormSplitBill from "./components/FormSplitBill";
 const initialFriends = [
   {
     id: 118836,
@@ -20,14 +23,15 @@ const initialFriends = [
   },
 ];
 
-
-
 function App() {
   return (
     <div className="app">
       <div className="sidebar">
         <FreindsList freinds={initialFriends} />
+        <FormAddFriend />
+        <Button>Add Friend</Button>
       </div>
+      <FormSplitBill />
     </div>
   );
 }
